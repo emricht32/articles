@@ -1,5 +1,4 @@
-
-## Part 2:  Concurrency and SwiftUI
+# Part 2:  Concurrency and SwiftUI
 
 Welcome to Part 2 of our tutorial on Concurrency and SwiftUI! In this part, we will discuss strategies for organizing networking code with Concurrency, and how to use advanced features of Concurrency like handling multiple network requests concurrently and canceling requests.
 
