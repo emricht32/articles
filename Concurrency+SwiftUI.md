@@ -318,10 +318,11 @@ When using Concurrency with SwiftUI, it's important to follow some best practice
 
 In this tutorial, we've learned how to use the Concurrency framework with SwiftUI to build an app that fetches data from an API and displays it in a user-friendly way. We also discussed best practices for using Concurrency with SwiftUI, and provided additional resources for learning more.
 If you would like to learn more about Concurrency and SwiftUI, here are some resources to check out:
-	•	[Concurrency in Swift: Getting Started](https://developer.apple.com/videos/play/wwdc2021/10208/)
-	•	[Concurrency Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html)
-	•	[SwiftUI Tutorials](https://developer.apple.com/tutorials/swiftui/)
-	•	[WWDC21 Sample Code](https://developer.apple.com/sample-code/swiftui/)
-	•	[AsyncSequence Documentation](https://developer.apple.com/documentation/swift/asyncsequence)
+1. [Concurrency in Swift: Getting Started](https://developer.apple.com/videos/play/wwdc2021/10208/)
+2. [Concurrency Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html)
+3. [SwiftUI Tutorials](https://developer.apple.com/tutorials/swiftui/)
+4. [WWDC21 Sample Code](https://developer.apple.com/sample-code/swiftui/)
+5. [AsyncSequence Documentation](https://developer.apple.com/documentation/swift/asyncsequence)
+
 Remember, Concurrency is a powerful tool for writing efficient, responsive, and scalable code. With SwiftUI, you can build beautiful, reactive UIs that respond to changes in your data. By combining Concurrency with SwiftUI, you can create apps that are both performant and user-friendly.
 So go forth and build amazing apps with Concurrency and SwiftUI!
