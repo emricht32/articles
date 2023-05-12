@@ -1,17 +1,3 @@
-# SwiftUI and the Concurrency framework
-
-Welcome to this three-part tutorial series on using the Concurrency framework with SwiftUI. In this series, we'll explore the basics of concurrency in Swift and how we can use it with SwiftUI to build high-performance apps.
-
-Concurrency is a crucial aspect of modern app development, as it enables us to run multiple tasks simultaneously and efficiently utilize available system resources. The Concurrency framework in Swift provides a set of powerful tools that allow us to manage the complexities of concurrent programming.
-
-In the first part of this tutorial series, we'll start by introducing the basics of concurrency and explore how to use the URLSession API to make network requests. We'll also learn about the different types of queues and how they are used to manage the execution of tasks.
-
-In the second part, we'll dive deeper into how concurrency can be used in SwiftUI to build responsive and performant user interfaces. We'll learn how to use async/await and Swift's new concurrency features to perform long-running tasks in the background and update the UI on the main thread.
-
-Finally, in the third part, we'll explore a real-world example that showcases the power of concurrency and SwiftUI in action. We'll build a simple app that retrieves data from an API and displays it in a list, all while leveraging the concurrency framework to provide a smooth and responsive user experience.
-
-Whether you're new to concurrency or an experienced developer looking to learn more about how it can be used with SwiftUI, this tutorial series has something for you. So, let's get started and learn how to build powerful and responsive apps with Swift and the Concurrency framework!
-
 ## Part 1: Introduction to Concurrency and Networking with URLSession
 
 In this part, we will cover the basics of Concurrency and how to use URLSession to perform network requests in a SwiftUI app. We will start by discussing what Concurrency is, why it's important, and how it works. Then, we will move on to setting up a basic network request, handling responses and errors with Concurrency's async/await syntax, and working with data in SwiftUI views.
