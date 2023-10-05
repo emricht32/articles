@@ -73,6 +73,19 @@ extension HTMLComponent {
         return HTMLComponent(tag: "body", children: [bodyComponent])
     }
     
+    public static func img(src: String, alt: String) -> HTMLComponent {
+        let attributes = [
+            "src": src,
+            "alt": alt
+        ]
+        return HTMLComponent(tag: "img", attributes: attributes)
+    }
+    
+    public static func div(@HTMLBuilder content: () -> HTMLComponent) -> HTMLComponent {
+        let component = content()
+        return HTMLComponent(tag: "div", children: [component])
+    }
+    
     public static func h1(_ text: String) -> HTMLComponent {
         return HTMLComponent(tag: "h1", text: text)
     }
@@ -89,5 +102,65 @@ extension HTMLComponent {
         let ulComponent = content()
         return HTMLComponent(tag: "ul", children: [ulComponent])
     }
-
+    
+    // Create an HTML <button> component
+    public static func button(text:String? = nil) -> HTMLComponent {
+        if let text = text{
+            return HTMLComponent(tag: "button", text:text)
+        } else {
+            return HTMLComponent(tag: "button")
+        }
+    }
+    
+    // Create an HTML <section> component
+    public static func section(@HTMLBuilder content: () -> HTMLComponent) -> HTMLComponent {
+        let component = content()
+        return HTMLComponent(tag: "section", children: [component])
+    }
+    
+    // Create an HTML <label> component
+    public static func label(for attribute: String, text: String) -> HTMLComponent {
+        let attributes = [
+            "for": attribute
+        ]
+        return HTMLComponent(tag: "label", attributes: attributes, text: text)
+    }
+    
+    // Create an HTML <input> component
+    public static func input(type: String, name: String, value: String? = nil) -> HTMLComponent {
+        var attributes = [
+            "type": type,
+            "name": name
+        ]
+        if let value = value {
+            attributes["value"] = value
+        }
+        return HTMLComponent(tag: "input", attributes: attributes)
+    }
+    
+    // Create an HTML <textarea> component
+    public static func textarea(name: String, text: String? = nil) -> HTMLComponent {
+        let attributes = [
+            "name": name
+        ]
+        if let text = text {
+            return HTMLComponent(tag: "textarea", attributes: attributes, text: text)
+        } else {
+            return HTMLComponent(tag: "textarea", attributes: attributes)
+        }
+    }
+    
+    // Create an HTML <a> component
+    public static func a(href: String, text:String?, _ attributes: [String:String]? = nil, @HTMLBuilder content: () -> HTMLComponent) -> HTMLComponent {
+        let component = content()
+        var attributes = attributes ?? [String:String]()
+        attributes["href"] = href
+        
+        if let text = text {
+            return HTMLComponent(tag: "a", attributes: attributes, children: [component], text: text)
+        } else {
+            return HTMLComponent(tag: "a", attributes: attributes, children: [component])
+        }
+    }
 }
+
