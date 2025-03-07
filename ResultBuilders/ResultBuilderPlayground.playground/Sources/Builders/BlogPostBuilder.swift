@@ -18,3 +18,4 @@ public struct BlogPostBuilder {
         return component
     }
 }
+
